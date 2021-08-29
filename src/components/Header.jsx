@@ -1,9 +1,11 @@
 import React from 'react'
+import badge from '../assets/vectors/badge.svg'
 
 function Header() {
   return (
     <div>
       <div>
+        <img src={badge} alt="" />
         <nav>
           <a className='link-nav' href="/">Create Your Nanny Share</a>
           <a className='link-nav' href="/">Browse Shares</a>
