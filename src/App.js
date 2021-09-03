@@ -1,4 +1,4 @@
-import './App.css';
+import './sass/App.scss';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Infos from './components/Infos';
@@ -10,9 +10,9 @@ function App() {
     <Provider>
       <div className="App">
         <Hero />
-        <News />
+        {/* <News />
         <Infos />
-        <Footer />
+        <Footer /> */}
       </div>
     </Provider>
   );

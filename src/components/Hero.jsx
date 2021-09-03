@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div>
       <Header />
-      <div>
+      {/* <div>
         <div>
           <h1>Easily create or join a local nanny share with Hapu</h1>
           <p>Hapu is Airbnb for nanny share. Share your home, nanny and costs and create new flexible, affordable solutions in childcare.</p>
@@ -17,7 +17,7 @@ function Hero() {
           </div>
         </div>
         <img src={imageHeader} alt="" />
-      </div>
+      </div> */}
     </div>
   )
 }

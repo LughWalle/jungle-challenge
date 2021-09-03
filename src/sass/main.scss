@@ -1,0 +1,29 @@
+// colors
+$first-color: #fff;
+$back-color: #000;
+$primary-color: #00A870;
+$secondary-color: #5e20a4;
+
+// screen size
+$tablet-screen: 930px;
+$mobile-screen: 360px;
+
+// breakpoints
+@mixin breakpoint($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+// styles
+@mixin btn-sample($color) {
+  border: none;
+  border-radius: 4px;
+  background-color: $color;
+  color: $first-color;
+  cursor: pointer;
+  font-size: 0.89rem;
+  overflow: hidden;
+  padding: 12px 21px;
+  position: relative;
+}

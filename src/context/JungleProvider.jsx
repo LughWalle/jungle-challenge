@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import JungleContext from './JungleContext';
 
 function Provider({ children }) {
-  const [test, setTest] = useState('A');
+  const [test, setTest] = useState(parseInt(Math.floor(Math.random() * 2), 10));
   const data = {
     test,
     setTest,
