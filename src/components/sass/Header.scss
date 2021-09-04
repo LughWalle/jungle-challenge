@@ -8,39 +8,39 @@
   justify-content: space-between;
   left: 0;
   margin: auto;
-  position: absolute;
-  right: 0;
   max-width: 1440px;
   position: absolute;
+  position: absolute;
+  right: 0;
 }
 
 .nav-header {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 40px;
   margin: 0 20px;
   .nav-menu {
     display: flex;
     gap: 32px;
     a {
+      color: $first-color;
       font-size: 1.05rem;
       text-decoration: none;
-      color: $first-color;
     }
   }
 }
 
 .signin {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 23px;
   margin: 0 32px;
 
   a {
     color: $first-color;
     font-size: 0.89rem;
-    text-decoration: none;
     margin-top: 10px;
+    text-decoration: none;
   }
   .btn {
     @include btn-sample($primary-color);
