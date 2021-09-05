@@ -1,15 +1,20 @@
-@import '../../sass/main.scss';
+@import "../../sass/main.scss";
 
-.footer {
+footer {
+  background: $first-color;
+}
+
+.main-footer {
   @include single-column();
-  background-color: $first-color;
-  gap: 16px;
+  // gap: 16px;
+  padding: 80px 0 24px;
 
   h1 {
     font-size: 1.75rem;
     font-weight: 500;
     line-height: 2rem;
-    margin-top: 80px;
+    // margin-top: 80px;
+    margin-bottom: 16px;
   }
 
   p {
@@ -20,8 +25,23 @@
   .btn-create {
     @include btn-sample($secondary-color);
     display: flex;
-    margin-top: 16px;
-    margin-bottom: 8px;
+    align-items: center;
+    margin: 32px 0 24px;
+    gap: 21px;
+    width: 304px;
+    .btn-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .text1 {
+        font-size: 1rem;
+        font-weight: 1.75rem;
+      }
+      .text2 {
+        font-size: 0.75rem;
+        font-weight: 1rem;
+      }
+    }
   }
 
   .nannys-shared {
@@ -30,33 +50,88 @@
     font-size: 1rem;
     // gap: 58px;
   }
-  .nav-footer {
+}
+
+.nav-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 58px 128px;
+  max-width: 1440px;
+  .hapu {
+    width: 15vw;
+  }
+  .nav-menu {
     display: flex;
-    align-items: center;
-    gap: 206px;
-    .hapu {
-      margin-right: 129px;
-    }
-    .nav-menu {
-      display: flex;
-      gap: 30px;
-      a {
-        @include link-hover($back-color, rgba($back-color, 1.15), 2px);
-        text-decoration: none;
-        color: $back-color;
-      }
-    }
-    .social {
-      display: flex;
-      gap: 16px;
+    gap: 30px;
+    justify-content: center;
+    a {
+      @include link-hover($section-text-color, rgba($section-text-color, 1.15), 2px);
+      color: $section-text-color;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+      text-decoration: none;
     }
   }
-  .copyrigth {
-    margin: 74px 0 32px 0px;
+  .social {
+    display: flex;
+    gap: 16px;
+    margin-inline: 5px;
+    a {
+      display: flex;
+      align-items: center;
+      border-radius: 100%;
+      &:hover {
+        background: scale-color($color: #cacaca, $lightness: -10%);
+      }
+    }
+  }
+}
 
-    font-size: 0.75rem;
-    font-weight: 400;
-    line-height: 1rem;
-    opacity: 0.6;
+.divider {
+  border-top: 2px solid #dfdfdf;
+  width: 57vw;
+}
+
+.copyrigth {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  opacity: 0.6;
+  padding: 32px 0;
+  text-align: center;
+}
+
+@include breakpoint($tablet-screen) {
+  .main-footer {
+    padding-top: 40px;
+    h1 {
+      font-size: 1.375rem;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+    p {
+      line-height: 1.75rem;
+    }
+  }
+  .nav-footer {
+    flex-direction: column;
+    gap: 24px;
+    .hapu {
+      width: auto;
+    }
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .nav-footer {
+    margin: 48px 0;
+    .nav-menu {
+      flex-wrap: wrap;
+      width: 266px;
+      gap: 16px 30px;
+
+      // display: grid;
+      // grid-template-columns: max-content max-content;
+    }
   }
 }

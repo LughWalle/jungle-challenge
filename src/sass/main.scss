@@ -101,9 +101,7 @@ $mobile-screen: 480px;
   &:hover {
     text-decoration: none;
     transform: scale(1.13);
-    // border-bottom: 2px solid $color;
     color: $color;
-    // text-shadow:  0 0 $size $color, 0 0 1em $shadow, 0 0 0.2em $shadow;
     text-shadow:  0 0 10px $shadow;
     transition: 0.2s;
   }
