@@ -12,7 +12,7 @@ function App() {
         <Hero />
         <News />
         <Infos />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Provider>
   );
