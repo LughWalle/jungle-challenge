@@ -3,10 +3,11 @@ $first-color: #fff;
 $back-color: #000;
 $primary-color: #00A870;
 $secondary-color: #5e20a4;
+$section-text-color: #3d3d3d;
 
 // screen size
 $tablet-screen: 930px;
-$mobile-screen: 360px;
+$mobile-screen: 480px;
 
 // breakpoints
 @mixin breakpoint($width) {
@@ -26,4 +27,33 @@ $mobile-screen: 360px;
   overflow: hidden;
   padding: 12px 21px;
   position: relative;
+}
+
+@mixin dual-column {
+  display: flex;
+  justify-content: center;
+  color: $section-text-color;
+  .sec-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+  }
+  & > img {
+    width: 70vw;
+  }
+}
+
+// interactions
+
+@mixin link-hover($color, $shadow, $size) {
+  &:hover {
+    border-bottom: 2px solid $color;
+    color: $color;
+    text-shadow: $size $size $shadow;
+    transition: 0.2s;
+  }
 }

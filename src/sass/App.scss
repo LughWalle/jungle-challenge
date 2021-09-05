@@ -10,3 +10,12 @@
 body {
   background-color: #f2f2f2;
 }
+
+a, a:visited {
+  font-weight: 500;
+  transition: 0.15s;
+  text-underline-position: under;
+  &:focus, &:hover {
+    color: scale-color(#5e20a4, $saturation: 50%, $lightness: 30%)
+  }
+}

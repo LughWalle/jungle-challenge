@@ -1,7 +1,6 @@
 @import "../../sass/main.scss";
 
 .header {
-  background-color: blue;
   display: flex;
   font-size: 1rem;
   font-weight: 500;
@@ -9,8 +8,6 @@
   left: 0;
   margin: auto;
   max-width: 1440px;
-  position: absolute;
-  position: absolute;
   right: 0;
 }
 
@@ -23,6 +20,7 @@
     display: flex;
     gap: 32px;
     a {
+      @include link-hover($first-color, $back-color, 2px);
       color: $first-color;
       font-size: 1.05rem;
       text-decoration: none;
@@ -35,8 +33,9 @@
   display: flex;
   gap: 23px;
   margin: 0 32px;
-
+  
   a {
+    @include link-hover($first-color, $back-color, 2px);
     color: $first-color;
     font-size: 0.89rem;
     margin-top: 10px;
@@ -49,7 +48,16 @@
 
 @include breakpoint($tablet-screen) {
   .nav-header {
-    nav {
+    .nav-menu {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .signin {
+    margin: 0 16px;
+    a {
       display: none;
     }
   }

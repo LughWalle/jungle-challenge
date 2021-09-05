@@ -1,0 +1,46 @@
+@import "../../sass/main.scss";
+
+.news {
+  align-items: center;
+  background-color: $first-color;
+  border: 1px solid #dfdfdf;
+  display: flex;
+  gap: 32px;
+  height: 114px;
+  justify-content: center;
+  .info-news {
+    display: flex;
+    align-items: center;
+    a {
+      margin: 2px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1rem;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@include breakpoint($tablet-screen) {
+  .news {
+    flex-direction: column;
+    height: 216px;
+    gap: 12px;
+    .info-news {
+      flex-direction: column;
+      height: 216px;
+      gap: 12px;
+    }
+  }
+}
+
+@include breakpoint($mobile-screen) {
+  .info-news {
+    p {
+      font-size: 0.89rem;
+      line-height: 1.3rem;
+    }
+  }
+}

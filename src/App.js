@@ -10,9 +10,9 @@ function App() {
     <Provider>
       <div className="App">
         <Hero />
-        {/* <News />
+        <News />
         <Infos />
-        <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </Provider>
   );

@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import JungleContext from './JungleContext';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import JungleContext from "./JungleContext";
 
 function Provider({ children }) {
-  const [test, setTest] = useState(parseInt(Math.floor(Math.random() * 2), 10));
+  const [ABTest, setABTest] = useState('');
+
   const data = {
-    test,
-    setTest,
+    ABTest,
+    setABTest,
   };
 
   return (
@@ -14,7 +15,7 @@ function Provider({ children }) {
       {children}
     </JungleContext.Provider>
   );
-};
+}
 
 Provider.prototype = {
   children: PropTypes.node.isRequired,

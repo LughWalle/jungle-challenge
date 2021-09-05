@@ -8,14 +8,14 @@ function Header() {
       <div className="nav-header">
         <img src={badge} className="logo" alt="logo" />
         <nav className="nav-menu">
-          <a className="link-nav" href="/">Create Your Nanny Share</a>
-          <a className="link-nav" href="/">Browse Shares</a>
-          <a className="link-nav" href="/">Our Story</a>
+          <a href="/">Create Your Nanny Share</a>
+          <a href="/">Browse Shares</a>
+          <a href="/">Our Story</a>
         </nav>
       </div>
       <div className="signin">
         <button className="btn">Become a Nanny Share Host</button>
-        <a className="link-nav" href="/">Sign In</a>
+        <a href="/">Sign In</a>
       </div>
     </div>
   )

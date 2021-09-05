@@ -1,0 +1,16 @@
+@import '../../sass/main.scss';
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #CCC, transparent); 
+}
+
+.section1 {
+  @include dual-column();
+  gap: 4vw;
+  margin: 120px 9vw 120px 16vw;
+  & > img {
+    width: 53%;
+  }
+}
