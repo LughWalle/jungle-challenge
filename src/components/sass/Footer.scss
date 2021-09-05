@@ -1,0 +1,62 @@
+@import '../../sass/main.scss';
+
+.footer {
+  @include single-column();
+  background-color: $first-color;
+  gap: 16px;
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 80px;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .btn-create {
+    @include btn-sample($secondary-color);
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .nannys-shared {
+    margin-bottom: 66px;
+    color: $secondary-color;
+    font-size: 1rem;
+    // gap: 58px;
+  }
+  .nav-footer {
+    display: flex;
+    align-items: center;
+    gap: 206px;
+    .hapu {
+      margin-right: 129px;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      a {
+        @include link-hover($back-color, rgba($back-color, 1.15), 2px);
+        text-decoration: none;
+        color: $back-color;
+      }
+    }
+    .social {
+      display: flex;
+      gap: 16px;
+    }
+  }
+  .copyrigth {
+    margin: 74px 0 32px 0px;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    opacity: 0.6;
+  }
+}

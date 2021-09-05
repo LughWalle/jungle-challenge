@@ -1,11 +1,15 @@
 @import "../../sass/main.scss";
 
-hr {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, transparent, #ccc, transparent);
+.divider {
+  border-top: 2px solid #dfdfdf;
+  width: 57vw;
+  margin: auto;
 }
 
+a {
+  color: $secondary-color;
+  font-size: 1rem;
+}
 .section1 {
   @include dual-column();
   gap: 4vw;
