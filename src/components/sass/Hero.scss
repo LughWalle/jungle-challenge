@@ -36,9 +36,16 @@ $gradient: linear-gradient(
       margin-bottom: 24px;
     }
     div {
-      display: flex;
       align-items: center;
+      display: flex;
       gap: 16px;
+      .play-btn {
+        align-items: center;
+        border-radius: 100%;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+      }
       a {
         // @include link-hover($first-color, $back-color, 2px);
         @include link-hover($first-color, $secondary-color, 2px);

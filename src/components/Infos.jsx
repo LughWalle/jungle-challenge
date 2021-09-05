@@ -25,7 +25,7 @@ function Infos() {
           </p>
           <a href="/">Ready to get started?</a>
         </div>
-        <img src={ImageSection1} alt="" />
+        <img src={ImageSection1} alt="app example" />
       </section>
 
       <hr className="divider" />
@@ -62,7 +62,7 @@ function Infos() {
       <hr className="divider" />
 
       <section className="section3">
-        <img src={ImageSection3} alt="img" />
+        <img src={ImageSection3} alt="payments simple" />
         <div className="sec-text">
           <h1>Shared payments made simple</h1>
           <p>
@@ -90,13 +90,13 @@ function Infos() {
           </p>
           <a href="/">Read how Hapu’s tribal background defines our app</a>
         </div>
-        <img src={ImageSection4} alt="" />
+        <img src={ImageSection4} alt="billing history" />
       </section>
 
       <hr className="divider" />
 
       <section className="section5">
-        <img src={ImageSection5} alt="" />
+        <img src={ImageSection5} alt="diary icon" />
         <div className="sec-text">
           <h1>Coming soon: Nanny Share Daily Diary!</h1>
           <p>

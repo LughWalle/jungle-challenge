@@ -35,7 +35,9 @@ function Hero() {
             : 'Connect with other local families to share a nanny from as low as $10.00/hr each. Create your family profile today to get started.'}
           </p>
           <div>
-            <img src={play_icon} alt="play-button" />
+            <button type="button" className="play-btn">
+              <img src={play_icon} alt="play button" />
+            </button>
             <a href="/">See hapu in action (27 seconds)</a>
           </div>
         </article>

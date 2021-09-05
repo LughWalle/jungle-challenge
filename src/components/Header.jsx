@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="header">
       <div className="nav-header">
-        <img src={badge} className="logo" alt="logo" />
+        <img src={badge} className="logo" alt="logo hapu" />
         <nav className="nav-menu">
           <a href="/">Create Your Nanny Share</a>
           <a href="/">Browse Shares</a>
@@ -14,7 +14,7 @@ function Header() {
         </nav>
       </div>
       <div className="signin">
-        <button className="btn">Become a Nanny Share Host</button>
+        <button type="button" className="btn">Become a Nanny Share Host</button>
         <a href="/">Sign In</a>
       </div>
     </div>

@@ -13,7 +13,7 @@ function Footer() {
         <h1>Become a nanny share host</h1>
         <p>Takes less than 5 minutes to get started</p>
         <button type="button" className="btn-create">
-          <img src={calendar} alt="icon calendar" />
+          <img src={calendar} alt="calendar icon" />
           <div className="btn-text">
             <p className="text1">Create Your Nanny Share</p>
             <p className="text2">Takes less than 5 minutes</p>
@@ -25,7 +25,7 @@ function Footer() {
       </div>
       <div className="nav-footer">
         <div className="hapu">
-          <img src={hapu_logo} alt="name hapu" />
+          <img src={hapu_logo} alt="hapu name" />
         </div>
         <div className="nav-menu">
           <a href="/">Share your Nanny</a>
