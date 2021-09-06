@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./sass/Info.scss";
 import ImageSection1 from "../assets/images/ImageSection1.png";
 import ImageSection3 from "../assets/images/ImageSection3.png";
@@ -10,13 +10,17 @@ function Infos() {
   const {
     handleSubmit,
     setEmail,
+    invalid,
     setName,
+    setSpan,
     email,
     name,
+    span,
   } = useContext(JungleContext);
 
-  const emailValid = /^[\w]+@[^\W\d]+\.[^\W\d]+$/gm.test(email);
-  console.log(emailValid);
+    useEffect(() => {
+      if (invalid) setSpan('');
+    }, [invalid, setSpan])
 
   return (
     <div>
@@ -49,8 +53,9 @@ function Infos() {
             Leave us your name and email and we’ll update you as soon as a share
             becomes available in your area!
           </p>
+        <span>{span}</span>
         </div>
-        <form className="form">
+        <form className={span ? 'danger': ''} >
           <input
             type="text"
             name="your name"
@@ -60,7 +65,7 @@ function Infos() {
             required
           />
           <input
-            type="text"
+            type="email"
             name="your email"
             id="your-email"
             placeholder="your email"
@@ -72,13 +77,12 @@ function Infos() {
             className="submit"
             onClick={(e) => {
               e.preventDefault();
+              
               handleSubmit(name, email);
             }}
-            // disabled={ !emailValid }
           >
             send
           </button>
-          <span>{}</span>
         </form>
       </section>
 

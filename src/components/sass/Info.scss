@@ -19,6 +19,7 @@ a {
   }
   @include breakpoint($tablet-screen) {
     @include dual-tablet();
+    align-items: center;
     flex-direction: column-reverse;
     gap: 24px;
   }
@@ -43,7 +44,15 @@ a {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-  .form {
+  span {
+    color: red;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .danger input:invalid {
+    border: 1px solid #f73772;
+  }
+  form {
     display: flex;
     gap: 12px;
     justify-content: center;
@@ -61,7 +70,7 @@ a {
   }
   @include breakpoint($tablet-screen) {
     @include single-tablet();
-    .form {
+    form {
       flex-direction: column;
       gap: 10px;
     }
@@ -80,6 +89,7 @@ a {
   }
   @include breakpoint($tablet-screen) {
     @include dual-tablet();
+    align-items: center;
     flex-direction: column;
     gap: 40px;
     img {

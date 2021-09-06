@@ -6,13 +6,11 @@ import imageHeader from '../assets/images/ImageHeader.png';
 
 function Hero() {
   const getAB = +localStorage.getItem('AB');
-  console.log(getAB);
   
   const ABCheck = () => {
     if (!getAB) {
       const ABValue = Math.floor(Math.random() * 2);
       localStorage.setItem('AB', ABValue);
-      console.log(ABValue);
     }
   }
 

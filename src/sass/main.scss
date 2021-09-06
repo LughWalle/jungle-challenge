@@ -27,6 +27,14 @@ $mobile-screen: 480px;
   overflow: hidden;
   padding: 12px 21px;
   position: relative;
+  &:hover {
+    transform: scale(0.98);
+    box-shadow: inset 0 0 19px 8px rgb($back-color, 0.2);
+    filter: hue-rotate(0%);
+  }
+  &:active {
+    transform: scale(0.96);
+  }
 }
 
 @mixin dual-column {

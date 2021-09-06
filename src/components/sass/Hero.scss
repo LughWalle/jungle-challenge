@@ -45,6 +45,13 @@ $gradient: linear-gradient(
         border: 0;
         cursor: pointer;
         display: flex;
+        > img {
+          &:hover {
+            transform: rotate(360deg);
+            transition: 0.8s;
+          }
+
+        }
       }
       a {
         // @include link-hover($first-color, $back-color, 2px);
