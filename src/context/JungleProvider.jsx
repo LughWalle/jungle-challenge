@@ -8,6 +8,7 @@ function Provider({ children }) {
   const [name, setName] = useState("");
   const [span, setSpan] = useState("");
   const [invalid, setInvalid] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   const errorHandling = (data) => {
     const { name, email } = data;
@@ -31,15 +32,17 @@ function Provider({ children }) {
   };
 
   const data = {
-    email,
-    name,
+    errorHandling,
+    handleSubmit,
+    setLoading,
     setEmail,
     setName,
-    handleSubmit,
-    errorHandling,
     setSpan,
-    span,
     invalid,
+    loading,
+    email,
+    name,
+    span,
   };
 
   return (
