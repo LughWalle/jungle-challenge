@@ -74,9 +74,11 @@ function Infos() {
               e.preventDefault();
               handleSubmit(name, email);
             }}
+            // disabled={ !emailValid }
           >
             send
           </button>
+          <span>{}</span>
         </form>
       </section>
 

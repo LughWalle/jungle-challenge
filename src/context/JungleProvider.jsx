@@ -6,7 +6,7 @@ import post from "../service/jungleApi";
 function Provider({ children }) {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
-  
+
   const handleSubmit = async (name, email) => {
     const data = {name, email};
     console.log(data);
