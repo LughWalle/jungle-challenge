@@ -54,7 +54,6 @@ $gradient: linear-gradient(
         }
       }
       a {
-        // @include link-hover($first-color, $back-color, 2px);
         @include link-hover($first-color, $secondary-color, 2px);
         color: $first-color;
         text-decoration: none;

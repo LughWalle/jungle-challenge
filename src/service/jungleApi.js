@@ -17,17 +17,4 @@ const post = async (data, handling, setInvalid) => {
   };
 }
 
-// const post = async (data, handling) => await axios({
-//     method: "post",
-//     url: "https://api.jungledevs.com/api/v1/challenge-newsletter/",
-//     data,
-//   }).catch((error) => {
-//     const { response, response: { data } } = error;
-//     console.log(response);
-//     if (response) {
-//       handling(data);
-//       console.error(data);
-//     }
-//   });
-
 export default post;
