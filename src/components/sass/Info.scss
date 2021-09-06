@@ -33,6 +33,7 @@ a {
 .section2 {
   @include single-column();
   margin: 64px auto;
+  gap: 20px;
   h1 {
     font-size: 1.375rem;
     font-weight: 500;

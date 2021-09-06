@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./sass/Info.scss";
 import ImageSection1 from "../assets/images/ImageSection1.png";
 import ImageSection3 from "../assets/images/ImageSection3.png";
 import ImageSection4 from "../assets/images/ImageSection4.png";
 import ImageSection5 from "../assets/images/ImageSection5.png";
+import JungleContext from "../context/JungleContext";
 
 function Infos() {
+  const {
+    handleSubmit,
+    setEmail,
+    setName,
+    email,
+    name,
+  } = useContext(JungleContext);
+
+  const emailValid = /^[\w]+@[^\W\d]+\.[^\W\d]+$/gm.test(email);
+  console.log(emailValid);
+
   return (
     <div>
       <section className="section1">
@@ -44,6 +56,7 @@ function Infos() {
             name="your name"
             id="your-name"
             placeholder="Your name"
+            onChange={({ target }) => setName(target.value)}
             required
           />
           <input
@@ -51,9 +64,17 @@ function Infos() {
             name="your email"
             id="your-email"
             placeholder="your email"
+            onChange={({ target }) => setEmail(target.value)}
             required
           />
-          <button type="submit" className="submit">
+          <button
+            type="submit"
+            className="submit"
+            onClick={(e) => {
+              e.preventDefault();
+              handleSubmit(name, email);
+            }}
+          >
             send
           </button>
         </form>

@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import JungleContext from "./JungleContext";
+import post from "../service/jungleApi";
 
 function Provider({ children }) {
-  const [ABTest, setABTest] = useState('');
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  
+  const handleSubmit = async (name, email) => {
+    const data = {name, email};
+    console.log(data);
+    const response = await post(data);
+    console.log(response);
+  }
 
   const data = {
-    ABTest,
-    setABTest,
+    email,
+    name,
+    setEmail,
+    setName,
+    handleSubmit,
   };
 
   return (
