@@ -45,12 +45,11 @@ $gradient: linear-gradient(
         border: 0;
         cursor: pointer;
         display: flex;
-        > img {
-          &:hover {
-            transform: rotate(360deg);
-            transition: 0.8s;
-          }
-
+        &:hover {
+          transform: scale(0.95);
+        }
+        &:active {
+          transform: scale(0.92);
         }
       }
       a {
