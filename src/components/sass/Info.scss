@@ -2,8 +2,8 @@
 
 .divider {
   border-top: 2px solid #dfdfdf;
-  width: 57vw;
   margin: auto;
+  width: 57vw;
 }
 
 a {
@@ -35,8 +35,8 @@ a {
   margin: 64px auto;
   h1 {
     font-size: 1.375rem;
-    line-height: 2rem;
     font-weight: 500;
+    line-height: 2rem;
   }
   p {
     font-size: 1.125rem;
@@ -47,10 +47,10 @@ a {
     gap: 12px;
     justify-content: center;
     input {
-      border: 1px solid #dfdfdf;
       border-radius: 4px;
-      padding: 0 20px;
+      border: 1px solid #dfdfdf;
       height: 44px;
+      padding: 0 20px;
     }
     .submit {
       @include btn-sample($primary-color);
@@ -105,8 +105,8 @@ a {
     gap: 40px;
     h1 {
       font-size: 1.75rem;
-      line-height: 2rem;
       font-weight: 500;
+      line-height: 2rem;
     }
     p {
       font-size: 1rem;

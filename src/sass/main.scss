@@ -30,17 +30,17 @@ $mobile-screen: 480px;
 }
 
 @mixin dual-column {
+  color: $section-text-color;
   display: flex;
   justify-content: center;
-  color: $section-text-color;
   .sec-text {
     display: flex;
     flex-direction: column;
     gap: 40px;
     h1 {
       font-size: 1.75rem;
-      line-height: 2rem;
       font-weight: 500;
+      line-height: 2rem;
     }
   }
   img {
@@ -86,8 +86,8 @@ $mobile-screen: 480px;
   margin: 64px;
   h1 {
     font-size: 1.375rem;
-    line-height: 2rem;
     font-weight: 500;
+    line-height: 2rem;
   }
 }
 
@@ -99,10 +99,10 @@ $mobile-screen: 480px;
 
 @mixin link-hover($color, $shadow, $size) {
   &:hover {
-    text-decoration: none;
-    transform: scale(1.13);
     color: $color;
+    text-decoration: none;
     text-shadow:  0 0 10px $shadow;
+    transform: scale(1.13);
     transition: 0.2s;
   }
 }

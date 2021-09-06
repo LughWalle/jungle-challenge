@@ -7,10 +7,10 @@ $gradient: linear-gradient(
 );
 
 .hero {
-  background: url(../../assets/images/banner_image.png), $gradient;
+  background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
-  background-blend-mode: overlay;
+  background: url(../../assets/images/banner_image.png), $gradient;
   height: 616px;
 }
 
@@ -88,8 +88,8 @@ $gradient: linear-gradient(
         text-align: center;
       }
       div {
-        margin-top: 60px;
         justify-content: center;
+        margin-top: 60px;
       }
     }
   }

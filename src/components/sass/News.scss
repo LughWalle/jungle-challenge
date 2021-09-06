@@ -9,15 +9,15 @@
   height: 114px;
   justify-content: center;
   .info-news {
-    display: flex;
     align-items: center;
+    display: flex;
     a {
       margin: 2px;
     }
     p {
-      font-weight: 500;
-      font-size: 1rem;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
       line-height: 1.5rem;
     }
   }
@@ -26,12 +26,12 @@
 @include breakpoint($tablet-screen) {
   .news {
     flex-direction: column;
-    height: 216px;
     gap: 12px;
+    height: 216px;
     .info-news {
       flex-direction: column;
-      height: 216px;
       gap: 12px;
+      height: 216px;
     }
   }
 }
